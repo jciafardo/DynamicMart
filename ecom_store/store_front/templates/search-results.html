@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'banner-cart.html' %}
+{% load static%}
+<head>
+{% block head %}
+  <head>
+
+    <meta charset="utf-8">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Site Metas -->
+    <meta name="keywords" content="Luxury cars" />
+    <meta name="description" content="Search Results" />
+    <meta name="author" content="Jack Ciafardo" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'store_front/css/home-search_results.css' %}">
+
+
+
+    <title>Search Results</title>
+  </head>
+{% endblock %}
+
+{% block content%}
+    <body>
+
+        {% if results == 'No Matches Found' %}
+            {{results}}
+        {% else %}
+            <section class="fruit_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <hr>
+        <h2>
+          Search Results
+        </h2>
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <div class="fruit_container" id="cart">
+        {% for result in results %}
+            <div class="box">
+              <img src="{% static 'store_front/images/products/' %}{{result.picture}}" alt="">
+              <div class="link_box">
+                <h5>
+                  {{result.name}}
+
+                </h5>
+                <h5>
+                  ${{result.price}}
+                </h5>
+                <a href="/view/{{result.name}}" class="buy-link">
+                  Buy Now
+                </a>
+                <form method="post">
+                  {% csrf_token %}
+                  <button type="submit" value="{{result.id}}" name="add-cart-item-id" style="background-color: transparent; color: white; border: 1px solid transparent;">Add to cart</button>
+                </form>
+              </div>
+            </div>
+          {% endfor %}
+      </div>
+    </div>
+  </section>
+        {% endif %}
+    </body>
+
+{% endblock %}

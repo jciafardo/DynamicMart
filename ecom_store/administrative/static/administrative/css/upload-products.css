@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}
+
+
+.upload-container {
+   max-width: 800px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+h1 {
+   text-align: center;
+	margin-bottom: 30px;
+	color: white;
+}
+
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 10px;
+	color: white
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+	background-color: white;
+}
+
+
+button[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: #0056b3;
+}

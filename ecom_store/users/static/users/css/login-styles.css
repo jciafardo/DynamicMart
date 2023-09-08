@@ -1,0 +1,62 @@
+
+/* login page styling */
+.login-container {
+  padding-bottom: 350px;
+  margin-top: 95px;
+}
+
+.card {
+  width: 35%;
+  border: 10px solid black;
+
+
+}
+
+.card-header h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.form-group {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.login-inputs {
+  height: 500px;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+}
+
+.submit-btn {
+  height: 50px;
+  width: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+
+
+}
+
+#register-btn {
+  background-color: lightgray;
+  color: black;
+}
+
+
+#google-logo {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+/* end login page styling */

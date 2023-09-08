@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'banner.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>accounts</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <a href="/password_change">Change Password</a>
+    {% endif %}
+</body>
+</html>

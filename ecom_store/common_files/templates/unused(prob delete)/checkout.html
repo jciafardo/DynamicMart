@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .checkout-container {
+            text-align: center;
+            padding-bottom: 100%;
+
+        }
+
+        .checkout-form {
+
+
+        }
+    </style>
+
+    <meta http-equiv="refresh" content="10">
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+
+    {% extends 'base.html' %}
+    {% load crispy_forms_tags %}
+    {% block title %}Checkout{% endblock %}
+</head>
+<body>
+    {% block content%}
+        <div class="checkout-container">
+            <h1>Items in cart:</h1>
+            {% for item in cart_items %}
+                <ul>
+                    <li>Item: {{item.product.name}}</li>
+                    <li>Price: {{item.product.price}}</li>
+                    <li>Quantity: {{item.product.quantity}}</li>
+
+                    <form method="post" action="#">
+                        {% csrf_token %}
+                        <button type="submit" value="{{item.id}}" name="remove">Remove</button>
+                    </form>
+                </ul>
+            {% endfor %}
+
+            <p>Total: {{total}}</p>
+
+
+            {% if total > 0 %}
+                <form method="post" action="" class="checkout-form">
+                    {% csrf_token %}
+                    <button type="submit" id=checkout-button value="confirm-checkout" name="confirm-checkout">Head to checkout !</button>
+                </form>
+            {% else %}
+                <p>Add some items to cart !</p>
+            {% endif %}
+        </div>
+    {% endblock %}
+</body>
+</html>

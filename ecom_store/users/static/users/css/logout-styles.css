@@ -1,0 +1,56 @@
+.logout-container {
+
+    margin-top: 15%;
+    padding-top: 40px;
+    text-align: center;
+    height: 40%;
+    width: 40%;
+    border: 1px solid grey;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom:
+
+}
+
+.logout-container button {
+    height: 70px;
+    width: 140px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    margin-top: 2.5%;
+}
+
+.logout-container button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px)
+}
+
+.logout-container button:active {
+    transform: translateY(2px);
+}
+
+.confirm-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+
+}
+
+
+.cancel-btn {
+   background-color: #f44336; /* Red background */
+   color: white; /* White text */
+}
+
+#success-msg {
+
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        color: #155724;
+        margin-top: 20px;
+        line-height: 30px
+
+
+}

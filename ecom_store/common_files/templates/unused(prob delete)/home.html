@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <style>
+
+            .homepage-container {
+                padding-bottom: 100%;
+                background-color: black;
+                border: 5px solid blue;
+            }
+
+            .grid-container {
+               display: grid;
+               grid-template-columns: repeat(3, minmax(1fr, 1fr));
+               border: 5px solid green;
+               color: white;
+               justify-items: center;
+               text-align: center;
+            }
+
+
+
+            .header {
+                border-style: solid;
+                border-color: white;
+                grid-column: span 3;
+
+            }
+
+            .second-header {
+                grid-column: span 3;
+                border-style: solid;
+                border-color: white;
+
+            }
+
+
+
+            .col-1 {
+                border-style: solid;
+                border-color: white;
+
+
+            }
+
+            .col-2 {
+                border-style: solid;
+                border-color: white;
+            }
+
+            .col-3 {
+                border-style: solid;
+                border-color: white;
+            }
+
+
+        </style>
+
+        {% load static %}
+
+
+    </head>
+    <body>
+
+        {% block content %}
+            <div class="homepage-container">
+               <div class="grid-container">
+                   <div class="header">
+                        <h1>Best Sellers</h1>
+                   </div>
+                   <div class="col-1">
+                        <a href="/view/{{best_seller.name}}"><img src="{% static 'store/view/'%}{{best_seller.picture}}" alt="what the fuck" style="height: 75%; width: 100%;"></a>
+                        <p>{{second_seller.name}}</p>
+                        <p>{{best_seller.description}}</p>
+                        <p>Price {{best_seller.price}}</p>
+                   </div>
+                   <div class="col-2">
+                        <a href="/view/{{second_seller.name}}"><img src="{% static 'store/view/' %}{{second_seller.picture}}" alt="what the fuck" style="height: 75%; width: 100%;"></a>
+                        <p>{{second_seller.name}}</p>
+                        <p>{{second_seller.description}}</p>
+                        <p>Price {{second_seller.price}}</p>
+                   </div>
+                   <div class="col-3">
+                        <a href="/view/{{third_seller.name}}"><img src="{% static 'store/view/'%}{{best_seller.picture}}" alt="what the fuck" style="height: 75%; width: 100%;"></a>
+                        <p>{{third_seller.name}}</p>
+                        <p>{{third_seller.description}}</p>
+                        <p>Price {{third.price}}</p>
+                   </div>
+                   <div class="second-header">
+                        <h1>More Stock ! </h1>
+                   </div>
+                </div>
+            </div>
+        {% endblock %}
+
+    </body>
+</html>

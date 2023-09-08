@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”robots” content=”noindex”>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'administrative/css/upload-products.css' %}">
+
+    <title>Admin Backend</title>
+</head>
+<body>
+
+{% if isSuperUser == True %}
+<div class="upload-container">
+<h1>Welcome Jumpin' Jacks admin page ! </h1>
+    <div class="input-container">
+        <form method="post">
+            {% csrf_token %}
+            <label for="nameInput">Enter Car Model</label>
+            <input type="text" id="nameInput" name="carName" required>
+
+            <label for="quantityInput">Enter Car Quantity</label>
+            <input type="number" id="quantityInput" name="carQuantity"required>
+
+            <label for="priceInput">Enter Car Price</label>
+            <input type="number" id="priceInput" name="carPrice" step="any" required>
+
+            <label for="pictureInput">Enter Car Picture (just upload the file name)</label>
+            <input type="file" id="pictureInput" name="carPicture" required>
+
+            <label for="descriptionInput">Enter Car Description</label>
+            <input type="text" id="descriptionInput" name="carDescription" required>
+
+            <button type="submit">Upload product to database !</button>
+        </form>
+    </div>
+</div>
+
+{% else %}
+  <h1>Page Not Found...</h1>
+
+{% endif %}
+
+</body>
+</html>

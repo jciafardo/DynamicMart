@@ -1,0 +1,441 @@
+.desk-top {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desk-top .div {
+  background-color: #ffffff;
+  height: 2408.82px;
+  overflow-x: hidden;
+  position: relative;
+  width: 1854.63px;
+}
+
+.desk-top .overlap {
+  height: 1650px;
+  left: -2px;
+  position: absolute;
+  top: 217px;
+  width: 1860px;
+}
+
+.desk-top .main-info-group {
+  height: 767px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1860px;
+}
+
+.desk-top .overlap-group {
+  height: 767px;
+  position: relative;
+  width: 1856px;
+}
+
+.desk-top .background-img {
+  height: 767px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1856px;
+}
+
+.desk-top .overlap-group-2 {
+  height: 770px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+  width: 1857px;
+}
+
+.desk-top .img {
+  height: 766px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: 1852px;
+}
+
+.desk-top .background-img-2 {
+  height: 766px;
+  left: 2px;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 1852px;
+}
+
+.desk-top .background-img-3 {
+  height: 766px;
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1852px;
+}
+
+.desk-top .text-wrapper {
+  color: #ffffff;
+  font-family: "Alegreya Sans SC-Regular", Helvetica;
+  font-size: 140px;
+  font-weight: 400;
+  left: 245px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 26px;
+  white-space: nowrap;
+  width: 1366px;
+}
+
+.desk-top .price-button {
+  align-items: center;
+  background-color: #ffd600;
+  border-radius: 90px;
+  display: flex;
+  gap: 10px;
+  height: 141px;
+  justify-content: center;
+  left: 653px;
+  padding: 47px 81px;
+  position: absolute;
+  top: 359px;
+  width: 549px;
+}
+
+.desk-top .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.71px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.desk-top .reviews-text {
+  color: transparent;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 50px;
+  font-weight: 400;
+  left: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 236px;
+  width: 989px;
+}
+
+.desk-top .span {
+  color: #ffffff;
+}
+
+.desk-top .text-wrapper-3 {
+  color: #ffd600;
+}
+
+.desk-top .aspects-group {
+  height: 153px;
+  left: 277px;
+  position: absolute;
+  top: 550px;
+  transform: rotate(0.08deg);
+  width: 1302px;
+}
+
+.desk-top .aspect {
+  height: 153px;
+  left: 1071px;
+  position: absolute;
+  top: 0;
+  transform: rotate(-0.08deg);
+  width: 233px;
+}
+
+.desk-top .simple-outline {
+  height: 103px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 230px;
+}
+
+.desk-top .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "JejuGothic-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 123px;
+  white-space: nowrap;
+  width: 231px;
+}
+
+.desk-top .aspect-2 {
+  height: 153px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-0.08deg);
+  width: 287px;
+}
+
+.desk-top .simple-outline-2 {
+  height: 103px;
+  left: 18px;
+  position: absolute;
+  top: 0;
+  width: 248px;
+}
+
+.desk-top .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "JejuGothic-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 123px;
+  white-space: nowrap;
+  width: 285px;
+}
+
+.desk-top .aspect-3 {
+  height: 153px;
+  left: 724px;
+  position: absolute;
+  top: 0;
+  transform: rotate(-0.08deg);
+  width: 245px;
+}
+
+.desk-top .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "JejuGothic-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 123px;
+  white-space: nowrap;
+  width: 234px;
+}
+
+.desk-top .aspect-4 {
+  height: 153px;
+  left: 390px;
+  position: absolute;
+  top: 0;
+  transform: rotate(-0.08deg);
+  width: 232px;
+}
+
+.desk-top .text-wrapper-7 {
+  color: #ffffff;
+  font-family: "JejuGothic-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 123px;
+  white-space: nowrap;
+  width: 220px;
+}
+
+.desk-top .portfolio-section {
+  height: 884px;
+  left: 65px;
+  position: absolute;
+  top: 767px;
+  width: 1729px;
+}
+
+.desk-top .text-wrapper-8 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 150px;
+  font-weight: 400;
+  left: 550px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 689px;
+}
+
+.desk-top .becca-tapert {
+  height: 482px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 402px;
+  width: 821px;
+}
+
+.desk-top .text-wrapper-9 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 120px;
+  font-weight: 400;
+  left: 175px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 191px;
+  white-space: nowrap;
+  width: 375px;
+}
+
+.desk-top .zohair-mirza {
+  height: 482px;
+  left: 903px;
+  object-fit: cover;
+  position: absolute;
+  top: 402px;
+  width: 821px;
+}
+
+.desk-top .text-wrapper-10 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 120px;
+  font-weight: 400;
+  left: 1085px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 192px;
+  white-space: nowrap;
+  width: 308px;
+}
+
+.desk-top .top-bar-group {
+  height: 115px;
+  left: 13px;
+  position: absolute;
+  top: 68px;
+  width: 1813px;
+}
+
+.desk-top .contact-group {
+  height: 107px;
+  left: 1491px;
+  position: absolute;
+  top: 8px;
+  width: 326px;
+}
+
+.desk-top .overlap-2 {
+  height: 107px;
+  position: relative;
+  width: 322px;
+}
+
+.desk-top .overlap-group-3 {
+  height: 104px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 314px;
+}
+
+.desk-top .text-wrapper-11 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 100px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 11px;
+  width: 214px;
+}
+
+.desk-top .text-wrapper-12 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  left: 117px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 57px;
+  width: 205px;
+}
+
+.desk-top .company-logo {
+  height: 88px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 429px;
+}
+
+.desk-top .tabs {
+  height: 50px;
+  left: 690px;
+  position: absolute;
+  top: 21px;
+  width: 561px;
+}
+
+.desk-top .text-wrapper-13 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 35px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+  white-space: nowrap;
+  width: 154px;
+}
+
+.desk-top .text-wrapper-14 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 35px;
+  font-weight: 400;
+  left: 192px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+  width: 171px;
+}
+
+.desk-top .text-wrapper-15 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 35px;
+  font-weight: 400;
+  left: 385px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 170px;
+}

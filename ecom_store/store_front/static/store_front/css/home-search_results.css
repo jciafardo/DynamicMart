@@ -1,0 +1,14 @@
+
+.buy-link {
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    padding: 5px;
+}
+
+.add-cart-btn {
+
+    background-color: transparent;
+    color: white;
+    border: 1px solid transparent;
+}

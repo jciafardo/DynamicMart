@@ -1,0 +1,41 @@
+STORE APP:
+basic store views like homepage viewing products and buying etc
+
+USERS APP:
+responsible for managing accounts
+
+
+
+Backend To Do:
+allow user to change password 
+9. After a user logs in whenever I reload the page I get a csrf error this is due to trying to log a user in when they are alreayd logged in
+   to fix the above problem I will change the CSRF_FAILURE_VIEW setting in my settings.py since the error is not really a security flaw
+
+13. make sure no inline css is being used
+15. make sure to only send email recipts when purhcase is success and only allow acsess to checkout success page if the user acually purhcases items
+same with declined checkout
+
+check if product is in stock before allowing user to purchase. Sometimes the item can be in the cart
+but it sells out before the user checks out
+
+
+
+
+find out why view/dsjfdslkf shows the mclarin
+
+
+
+AUTHENTICATION To Do:
+    allow user to login and create account through google
+
+
+SECURITY TO Do:
+    secure stripe api keys
+    defend against other attacks
+
+
+Frontend To Do:
+3. make email receipts look nice
+
+
+

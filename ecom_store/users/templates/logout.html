@@ -1,0 +1,30 @@
+
+<html lang="en">
+{% extends 'banner-cart.html' %}
+{% load static %}
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'users/css/logout-styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'users/css/users-styles.css' %}">
+
+    <title>Logout Page</title>
+</head>
+{% endblock %}
+<body>
+    {% block content %}
+    <form method="post" action="#">
+        {% csrf_token %}
+        <div class="logout-container">
+            <h1 id="head-msg">Do You Wish To Log Out ? </h1>
+            <hr>
+            <button type="submit" class="confirm-btn" name="logout-form" value="confirm">Confirm</button>
+            <p id="success-msg">{{success_msg}}</p>
+        </div>
+    </form>
+
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'banner-cart.html' %}
+{% load static %}
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <title>View Product</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'store_front/css/view-product.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'common_files/css/shared-styles.css' %}">
+
+</head>
+{% endblock %}
+{% block content %}
+<body>
+
+    <div class="product-container">
+        <h1 class="productText">{{product.name}}</h1>
+        <p class="productText">${{product.price}}</p>
+        <img class="product-img" src="{% static 'store_front/images/products/' %}{{product.picture}}">
+        <hr>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="add-cart-item-id" value="{{product.id}}" class="addCart viewBtn">Add to cart</button>
+            <hr>
+        <p class="productText descriptionText">Description: {{product.description}}</p>
+            <hr>
+            <button name="checkout" type="submit" class="checkout viewBtn">Checkout now !</button>
+            {% if error_msg %}
+                <p id="error-msg">{{error_msg}}</p>
+            {% endif %}
+        </form>
+    </div>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .background-container {
+            position: relative;
+            background-color: black;
+            padding-bottom: 100%;
+            border-style: solid;
+            border-color: white;
+            text-align: center;
+        }
+
+        .item-container {
+
+            display: inline-block;
+            padding: 50px;
+            border-style: solid;
+            border-color: white;
+            margin-top: 100px;
+            line-height: 50px;
+
+
+
+        }
+
+        .product-img {
+            width: 100%;
+        }
+
+        .product {
+            color: white;
+
+        }
+
+        .checkout-btn {
+
+
+        }
+
+
+
+
+    </style>
+    {% extends 'base.html' %}
+    {% load static %}
+    {% block title%}View{% endblock %}
+</head>
+<body>
+    {% block content %}
+        <div class="background-container">
+            <div class="item-container">
+                <div class="product">
+                    <img src="{% static 'store/view/'%}{{product.picture}}" alt="what the fuck" style="height: 400px; width: 100px;">
+                    {{product.name}}
+                    <p>Price {{product.price}}</p>
+                        '{{product.picture}}'
+                    <p>description</p>
+
+
+                </div>
+
+                    <form action="#" method="post">
+                        {% csrf_token %}
+                        <div class="checkout-btn">
+                            <button type="submit" value="{{product.id}}" name="item_id" class="btn btn-dark">Add to cart</button>
+                        </div>
+                    </form>
+
+                <div class="checkout">
+                    <a href="/checkout" class="btn btn-dark">Checkout</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+#error-msg {
+     background-color: #f2dede;
+     border: 1px solid #ebcccc;
+     color: #a94442;
+}
+#success-msg {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        color: #155724;
+}
