@@ -144,10 +144,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+'''
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR)
+    os.path.join(BASE_DIR, 'static')
 ]
+'''
+STATIC_ROOT = '/Ecom_Store_Project/ecom_store/static'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = '/'

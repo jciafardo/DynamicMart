@@ -6,8 +6,8 @@ import ssl
 import smtplib
 from email.message import EmailMessage
 import sys
-sys.path.append("C:\Hacks\python\programs\Web_Development\homepage_creation\Ecom_Store_Project")
-print(sys.path)
+
+print("path", sys.path)
 from ecom_store.common_files.views import get_cart_attrs
 from ecom_store.common_files.shared_models import productData
 from django.http import HttpResponseRedirect
