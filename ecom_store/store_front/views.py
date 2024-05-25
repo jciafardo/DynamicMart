@@ -1,6 +1,10 @@
+
+import sys
+sys.path.append("/home/jciafardo/official-car-store/ecom_store")
+
 from django.http import HttpResponseRedirect
-from ecom_store.common_files.views import get_cart_attrs
-from ecom_store.common_files.shared_models import Products, productData, cartItems
+from common_files.views import get_cart_attrs
+from common_files.shared_models import Products, productData, cartItems
 from django.shortcuts import render
 from fuzzywuzzy import fuzz
 from django.shortcuts import redirect
@@ -11,7 +15,6 @@ from django.shortcuts import redirect
 # Homepage for browsing and about company
 def home(response):
     if response.method == 'POST':
-        print('POSTED', response.POST)
         if 'add-cart-item-id' in response.POST or 'remove-item-id' in response.POST or 'checkout' in response.POST:
             return cart_post_handler(response, 'home')
 
@@ -162,5 +165,4 @@ def cart_post_handler(response, view_name):
         return HttpResponseRedirect(create_checkout_session(response))
 
 
-def test(response):
-    return render(response, 'delete.html', {})
+

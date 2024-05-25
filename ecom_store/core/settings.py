@@ -12,14 +12,19 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv
 import sys
-sys.path.append(r'C:\Hacks\python\programs\Web_Development\Ecom_Store_Project')
+from dotenv import load_dotenv
+
+
+
+sys.path.append(r'~/jciafardo/official-car-store/ecom_store')
 
 
 
 # Build paths inside the version_control like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+dotenv_path = os.path.join(BASE_DIR, '.env')
+load_dotenv(dotenv_path)
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,17 +32,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-
-load_dotenv(dotenv_path='.env')
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["onlinecarstore-jciafardo.pythonanywhere.com"]
 
 WP_URL = 'https://ciafardo.store/'
 BLOG_POSTS_PER_PAGE = 3
@@ -96,14 +99,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecom_data',
-        'USER': 'root',
+        'ENGINE': os.getenv('DB_ENGINE'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
         'PASSWORD': os.getenv('DB_PWD'),
-        'HOST': 'localhost',
-        'PORT': '3306',
-
-
+        'HOST': os.getenv('DB_HOST'),
     }
 }
 
@@ -150,7 +150,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 '''
-STATIC_ROOT = '/Ecom_Store_Project/ecom_store/static'
+
+STATIC_ROOT = '/official-car-store/ecom_store/static'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = '/'

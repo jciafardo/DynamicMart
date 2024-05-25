@@ -1,5 +1,5 @@
 from django.http import HttpResponseRedirect
-from ecom_store.common_files.shared_models import Products, productData, cartItems
+from .shared_models import Products, productData, cartItems
 
 
 # Used for functions used by both apps

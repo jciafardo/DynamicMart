@@ -7,9 +7,10 @@ import smtplib
 from email.message import EmailMessage
 import sys
 
+sys.path.append("/home/jciafardo/official-car-store/ecom_store")
 print("path", sys.path)
-from ecom_store.common_files.views import get_cart_attrs
-from ecom_store.common_files.shared_models import productData
+from common_files.views import get_cart_attrs
+from common_files.shared_models import productData
 from django.http import HttpResponseRedirect
 
 
@@ -56,10 +57,12 @@ def create_checkout_session(response):
 
     session_id = checkout_session.id
 
-    # here we send confirmation email
-    email_sender = 'jumpinjackscarstore'
-    email_password = 'tnhypcqkdpirtkmm'
-    email_recipient = 'ciafardoj@gmail.com'
+    # here we send confirmation email commented out because stripe can take care of sendimg emails
+
+    '''
+    email_sender = 'email sender'
+    email_password = 'this is not the password'
+    email_recipient = 'sender email'
 
     subject = 'My Store'
     body = 'Receipt'
@@ -76,10 +79,9 @@ def create_checkout_session(response):
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
         smtp.login(email_sender, email_password)
         smtp.sendmail(email_sender, email_recipient, email_object.as_string())
+    '''
 
-    print("")
-    print('URLL', checkout_session.url)
-    print("")
+
 
     if checkout_session.url is None:
         return HttpResponseRedirect('/')
@@ -104,12 +106,9 @@ def checkout_success(response):
     except:
         pass
 
-    print('STATUSSSSS', session["payment_status"])
+
 
     if session["payment_status"] == "paid":
-        print('paid')
         response.session['checkout_session'] = None
     if session["payment_status"] == "unpaid":
-        print('unpaid')
-
-    return render(response, 'checkout-success.html', {})
+         return render(response, 'checkout-success.html', {})

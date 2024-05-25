@@ -1,5 +1,9 @@
+
+import sys
+sys.path.append("/home/jciafardo/official-car-store/ecom_store")
+
 from django.shortcuts import render
-from ecom_store.common_files.shared_models import Products, productData
+from common_files.shared_models import Products, productData
 # Create your views here.
 
 
