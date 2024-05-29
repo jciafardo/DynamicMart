@@ -47,6 +47,9 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
 6. Run migrations:
 
    ```bash
+   python manage.py makemigrations
+   ```
+   ```bash
    python manage.py migrate
    ```
 
