@@ -7,7 +7,7 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
 - **Product Listings**: Browse a wide range of products dynamically displayed on the platform.
 - **Payment Processing**: Securely purchase products using the integrated Stripe API.
 - **Database Integration**: Utilizes a MySQL database to store and manage product information.
-- **Cloud Hosting**: Hosted on the cloud for scalability and reliability.
+- **User Authentication**: Features a secure login system allowing users to login/out.
 
 ## Installation
 
@@ -33,8 +33,14 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
    - Create a `.env` file in the project directory.
    - Add the following environment variables:
      ```
-     DATABASE_URL=mysql://username:password@hostname:port/database_name
-     STRIPE_SECRET_KEY=your_stripe_secret_key
+    STRIPE_PUBLIC_KEY=YourKeyHere
+    STRIPE_SECRET_KEY=YourKeyHere
+    SECRET_KEY=YourKeyHere
+    DB_PWD=YourKeyHere
+    DB_ENGINE=YourKeyHere
+    DB_NAME=YourKeyHere
+    DB_USER=YourKeyHere
+    DB_HOST=YourKeyHere
      ```
 
 5. Run migrations:
