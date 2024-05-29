@@ -41,21 +41,22 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
     DB_NAME=YourKeyHere
     DB_USER=YourKeyHere
     DB_HOST=YourKeyHere
-     ```
 
-5. Run migrations:
+   ```
+
+6. Run migrations:
 
    ```bash
    python manage.py migrate
    ```
 
-6. Start the development server:
+7. Start the development server:
 
    ```bash
    python manage.py runserver
    ```
 
-7. Access the application at `http://localhost:8000/` in your web browser.
+8. Access the application at `http://localhost:8000/` in your web browser.
 
 ## Usage
 
