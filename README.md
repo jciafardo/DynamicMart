@@ -32,7 +32,8 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
 4. Set up environment variables:
    - Create a `.env` file in the project directory.
    - Add the following environment variables:
-     ```
+     
+    ```plaintext
     STRIPE_PUBLIC_KEY=YourKeyHere
     STRIPE_SECRET_KEY=YourKeyHere
     SECRET_KEY=YourKeyHere
@@ -41,8 +42,7 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
     DB_NAME=YourKeyHere
     DB_USER=YourKeyHere
     DB_HOST=YourKeyHere
-
-   ```
+    ```
 
 6. Run migrations:
 
