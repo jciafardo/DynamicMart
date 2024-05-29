@@ -66,8 +66,6 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please submit them to the [issue tracker](https://github.com/your_username/dynamicmart/issues).
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please submit them to the [issue tracker](https://github.com/jciafardo/dynamicmart/issues).
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
