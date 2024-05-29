@@ -9,6 +9,9 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
 - **Database Integration**: Utilizes a MySQL database to store and manage product information.
 - **User Authentication**: Features a secure login system allowing users to login/out.
 
+## Django Documentation
+[Django Docs](https://docs.djangoproject.com/en/5.0/howto/deployment/)
+
 ## Installation
 
 1. Clone the repository:
