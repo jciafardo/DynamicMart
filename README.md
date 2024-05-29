@@ -14,7 +14,7 @@ DynamicMart is a powerful web application built with Django, hosted on the cloud
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/dynamicmart.git
+   git clone https://github.com/jciafardo/dynamicmart.git
    ```
 
 2. Navigate to the project directory:
